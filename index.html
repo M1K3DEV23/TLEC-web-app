@@ -1,43 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Biblioteca Digital TLEC</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Biblioteca Digital TLEC</h1>
-    <nav>
-      <a href="sobre-nosotros.html">Sobre nosotros</a>
-      <a href="nuestros-temas.html">Nuestros temas</a>
-      <a href="apoyanos.html">Apoyanos</a>
-      <a href="popular.html">Popular</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Bienvenido a la Biblioteca Digital TLEC</h2>
-    <p>
-      TLEC es una biblioteca digital gratuita que ofrece una gran variedad de libros, artículos, revistas y otros recursos en línea. Nuestra misión es promover el acceso a la información y el conocimiento para todos.
-    </p>
-    <p>
-      Explore nuestra biblioteca para encontrar recursos sobre una amplia gama de temas, incluyendo:
-    </p>
-    <ul>
-      <li>Arte</li>
-      <li>Ciencia</li>
-      <li>Historia</li>
-      <li>Literatura</li>
-      <li>Medicina</li>
-      <li>Tecnología</li>
-      <li>Y mucho más</li>
-    </ul>
-    <p>
-      Regístrese para obtener una cuenta gratuita y comience a explorar hoy mismo.
-    </p>
-  </main>
-  <footer>
-    <p>Copyright &copy; 2023 Biblioteca Digital TLEC</p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <!-- Normalizar los estilos en todos los navegadores -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- Estilos CSS personalizados -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Titulos de la pagina -->
+    <title>Biblioteca Digital TLEC</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <!-- Logo de la pagina -->
+      <div class="header__logo">
+        <img src="" alt="Logo de la pagina" class="header__logo-image" />
+      </div>
+      <!-- <h1>Biblioteca Digital TLEC</h1> -->
+      <!-- Barra de navegacion -->
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <!-- Cada <a> son los enlaces de navegacion de la pagina -->
+            <a class="header__nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./nuestros_temas.html">Nuestros temas</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./apoyanos.html">Apoyanos</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./populares.html">Populares</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido Principal -->
+    <main class="main contenedor">
+      <!-- Seccion 1 -->
+      <section class="main__intro">
+        <h1 class="main__title">Biblioteca Digital TLEC</h1>
+        <p class="main__descripcion">
+          TLEC es una biblioteca digital gratuita que ofrece una gran variedad de libros, artículos, revistas y otros recursos en línea.
+          Nuestra misión es promover el acceso a la información y el conocimiento para todos.
+        </p>
+      </section>
+      <!-- Seccion Mas vendidos -->
+      <section class="main__category">
+        <h2 class="main__category-title">Más Vendidos</h2>
+        <div class="main__books">
+          <!-- Tarjetas aqui -->
+          <!-- Tarjeta de libro 1 -->
+          <div class="book">
+            <img class="book__cover" src="./img/El_principito.jpg" alt="Portda del libro" />
+            <h3 class="book__title">El principito</h3>
+          </div>
+          <!-- Tarjeta de libro 2 -->
+          <div class="book">
+            <img class="book__cover" src="./img/Biblia.jpg" alt="Portda del libro" />
+            <h3 class="book__title">La biblia</h3>
+          </div>
+          <!-- Tarjeta de libro 2 -->
+          <div class="book">
+            <img class="book__cover" src="./img/el_codigo_davinci.jpg" alt="Portda del libro" />
+            <h3 class="book__title">El codigo da vinci</h3>
+          </div>
+        </div>
+      </section>
+      <!-- Seccion Mas novedades -->
+      <section class="main__category">
+        <h2 class="main__category-title">Novedades</h2>
+        <div class="main__books">
+          <!-- Tarjetas aqui -->
+          <!-- Tarjeta de libro 1 -->
+          <div class="book">
+            <img class="book__cover" src="./img/El_principito.jpg" alt="Portda del libro" />
+            <h3 class="book__title">El principito</h3>
+          </div>
+          <!-- Tarjeta de libro 2 -->
+          <div class="book">
+            <img class="book__cover" src="./img/Biblia.jpg" alt="Portda del libro" />
+            <h3 class="book__title">La biblia</h3>
+          </div>
+          <!-- Tarjeta de libro 2 -->
+          <div class="book">
+            <img class="book__cover" src="./img/el_codigo_davinci.jpg" alt="Portda del libro" />
+            <h3 class="book__title">El codigo da vinci</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Pie de pagina -->
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img class="footer__logo-image" src="" alt="Logo del pie de pagina" />
+        </div>
+        <div class="footer__info">
+          <h3 class="footer__info-title">Contacto</h3>
+          <p class="footer__info-text">Correo electronico: SoporteTLEC@gmail.com</p>
+          <p class="footer__info-text">Telefono +1 123-456-7890</p>
+        </div>
+        <div class="footer__social">
+          <h3 class="footer__social-title">Siguenos en las redes sociales</h3>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">Facebook</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">Twitter</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
