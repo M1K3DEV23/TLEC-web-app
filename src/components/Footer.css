@@ -1,0 +1,121 @@
+footer {
+  display: grid;
+  justify-content: center;
+  align-content: end;
+  min-height: 45vh;
+  background: #fff;
+  padding: 50px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+}
+
+footer .contenedor-footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+footer .contenedor-footer .sec h2 {
+  position: relative;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+footer .contenedor-footer .sec p {
+  color: #555;
+  text-align: justify;
+}
+
+footer .contenedor-footer .sec {
+  margin-right: 200px;
+}
+
+footer .contenedor-footer .sci {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+}
+
+footer .contenedor-footer .sci li {
+  list-style: none;
+}
+
+footer .contenedor-footer .sci li a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: #333;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+footer .contenedor-footer .sci li a i {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* footer .contenedor-footer .quicklinks {
+  position: relative;
+}
+
+footer .contenedor-footer .quicklinks ul li {
+  list-style: none;
+}
+
+footer .contenedor-footer .quicklinks ul li a {
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+} */
+
+footer .contenedor-footer .contact .info {
+  position: relative;
+}
+
+footer .contenedor-footer .contact .info li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-bottom: 16px;
+}
+
+footer .contenedor-footer .contact .info li span {
+  color: #555;
+  font-size: 20px;
+}
+
+footer .contenedor-footer .contact .info li a {
+  color: #555;
+  text-decoration: none;
+}
+
+.copyrightText {
+  width: 100%;
+  background: #fff;
+  padding: 20px 100px 30px;
+  text-align: center;
+  color: #555;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 40px;
+  }
+
+  footer .contenedor-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .copyrightText {
+    padding: 20px 40px 30px;
+  }
+}
